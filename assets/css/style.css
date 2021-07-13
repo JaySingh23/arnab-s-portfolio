@@ -1,13 +1,4 @@
-/**
-* Template Name: Personal - v4.3.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -16,12 +7,15 @@ body {
   background: transparent;
 }
 
+::selection {
+  background-color: #20a15c;
+}
+
 body::before {
   content: "";
   position: fixed;
-  background: #040404
-    url("../img/possessed-photography-g29arbbvPjo-unsplash.jpg") top right
-    no-repeat;
+  background: #040404 url("../img/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg") top
+    right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -75,7 +69,7 @@ h6 {
 #header h1 {
   font-size: 48px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 2rem;
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -108,6 +102,7 @@ h6 {
 #header .social-links {
   margin-top: 40px;
   display: flex;
+  margin-left: 60px;
 }
 
 #header .social-links a {
@@ -138,6 +133,7 @@ h6 {
   }
   #header .social-links {
     margin-top: 15px;
+    margin-right: 20px;
   }
   #header .container {
     display: flex;
@@ -540,79 +536,32 @@ section .container {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+.card-body blockquote {
+  color: #040404;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.12);
+.card {
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.08);
+  display: block;
 }
 
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: #fff;
+.card-header {
+  background-color: #353535;
+  opacity: 0.8;
+  text-transform: capitalize;
+  color: #15bb62;
 }
 
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 0 45px;
+.blockquote-footer::selection {
+  color: #eee;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.25);
-  font-size: 26px;
+cite::selection {
+  color: #eee;
 }
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
-}
-
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -672,86 +621,6 @@ section .container {
   top: 0;
   background: #18d26e;
   border: 2px solid #18d26e;
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #18d26e;
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: "";
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: #fff;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #18d26e;
-}
-
-.services .icon-box:hover .icon::before {
-  background: #35e888;
-}
-
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1186,4 +1055,10 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me h4 {
+    margin-top: 20px;
+  }
 }
